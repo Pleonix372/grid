@@ -168,3 +168,326 @@ p {
 .task50 .item3 {
   grid-column: 1/3;
 }
+
+.task1 {
+  display: grid;
+  justify-content: stretch;
+}
+
+.task2 {
+  display: grid;
+  justify-content: flex-start;
+}
+
+.task3 {
+  display: grid;
+  gap: 25px 10px;
+}
+
+.task4 {
+  .item1 {
+    order: 1;
+  }
+  .item2 {
+    order: 5;
+  }
+  .item3 {
+    order: 6;
+  }
+  .item4 {
+    order: 4;
+  }
+  .item5 {
+    order: 2;
+  }
+  .item6 {
+    order: 3;
+  }
+}
+
+.task5 {
+  display: grid;
+  justify-content: flex-start;
+}
+
+.task6 {
+  display: grid;
+  justify-content: flex-end;
+}
+
+.task7 {
+  display: grid;
+  justify-content: center;
+}
+
+.task8 {
+  display: grid;
+  justify-content: space-between;
+}
+
+.task9 {
+  display: grid;
+  justify-content: space-around;
+}
+
+.task10 {
+  display: grid;
+  justify-content: space-evenly;
+}
+
+.task11 {
+  display: grid;
+  justify-content: stretch;
+}
+
+.task12 {
+  display: grid;
+  align-content: flex-start;
+}
+
+.task13 {
+  display: grid;
+  align-content: flex-end;
+}
+
+.task14 {
+  display: grid;
+  align-content: center;
+}
+
+.task15 {
+  display: grid;
+  align-content: stretch;
+}
+
+.task16 {
+  display: grid;
+  align-content: space-between;
+}
+
+.task17 {
+  display: grid;
+  align-content: space-around;
+}
+
+.task18 {
+  display: grid;
+  align-content: space-evenly;
+}
+
+.task19 {
+  display: grid;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.task20 {
+  display: grid;
+  justify-items: flex-start;
+}
+
+.task21 {
+  display: grid;
+  justify-items: flex-end;
+}
+
+.task22 {
+  display: grid;
+  justify-items: center;
+}
+
+.task23 {
+  display: grid;
+  justify-items: stretch;
+}
+
+.task24 {
+  display: grid;
+  align-items: flex-start;
+}
+
+.task25 {
+  display: grid;
+  align-items: flex-end;
+}
+
+.task26 {
+  display: grid;
+  align-items: center;
+}
+
+.task27 {
+  display: grid;
+  align-items: stretch;
+}
+
+.task28 {
+  display: grid;
+  align-items: baseline;
+}
+
+.task29 {
+  display: grid;
+  justify-items: center;
+  align-content: stretch;
+}
+
+.task30 .item:first-of-type {
+  display: grid;
+  justify-self: flex-start;
+}
+
+.task31 .item:nth-of-type(2) {
+  display: grid;
+  justify-self: flex-end;
+}
+
+.task32 .item:nth-of-type(3) {
+  display: grid;
+  justify-self: center;
+}
+
+.task33 .item:nth-of-type(4) {
+  display: grid;
+  justify-self: stretch;
+}
+
+.task34 .item:first-of-type {
+  display: grid;
+  align-self: flex-start;
+}
+
+.task35 .item:nth-of-type(2) {
+  display: grid;
+  align-self: flex-end;
+}
+
+.task36 .item.item:nth-of-type(3) {
+  display: grid;
+  align-self: center;
+}
+
+.task37 .item:nth-of-type(4) {
+  display: grid;
+  align-self: stretch;
+}
+
+.task38 .item.item:nth-of-type(5) {
+  display: grid;
+  justify-self: flex-start;
+  align-self: center;
+}
+
+.task39 {
+  display: grid;
+  grid-template-rows: 1fr 2fr 3fr;
+}
+
+.task40 {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+}
+
+.task41 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.task42 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: 'item1 item2' 'item1 item3' 'item4 item5' 'item4 item6';
+}
+.task42 .item1 {
+  grid-area: item1;
+}
+.task42 .item2 {
+  grid-area: item2;
+}
+.task42 .item3 {
+  grid-area: item3;
+}
+.task42 .item4 {
+  grid-area: item4;
+}
+.task42 .item5 {
+  grid-area: item5;
+}
+.task42 .item16 {
+  grid-area: item6;
+}
+
+.task43 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.task43 .item3 {
+  grid-column: 1 / 3;
+}
+
+.task44 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.task44 .item3 {
+  grid-row: 1 / 3;
+}
+
+.task45 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.task45 .item3 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+
+.task46 {
+  display: grid;
+  grid-template-columns: min-content max-content;
+  grid-template-rows: auto;
+}
+
+.task47 {
+  display: grid;
+  grid-auto-rows: min-content;
+}
+
+.task48 {
+  display: grid;
+  grid-auto-rows: auto;
+}
+
+.task49 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, auto);
+}
+
+.task50 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, auto);
+}
+
+.task51 {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(100px, 1fr)
+  );
+}
+
+.task52 {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(100px, 1fr)
+  );
+}
